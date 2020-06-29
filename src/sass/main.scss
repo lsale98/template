@@ -1,0 +1,8 @@
+$colors: ( primary: rgb(230, 230, 230), );
+@function color($color-pick) {
+    @return map-get($colors, $color-pick);
+}
+
+* {
+    background-color: color(primary);
+}
