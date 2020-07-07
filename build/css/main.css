@@ -1,2 +1,18 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #e6e6e6; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black;
+    text-decoration: none; }
+
+li {
+  list-style-type: none; }

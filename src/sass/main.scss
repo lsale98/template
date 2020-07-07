@@ -1,8 +1,3 @@
-$colors: ( primary: rgb(230, 230, 230), );
-@function color($color-pick) {
-    @return map-get($colors, $color-pick);
-}
-
-* {
-    background-color: color(primary);
-}
+@import "modules/1-variables";
+@import "modules/2-utilities";
+@import "modules/0-base";
