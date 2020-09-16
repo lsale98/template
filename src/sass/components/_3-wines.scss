@@ -1,0 +1,30 @@
+#wines {
+  width: 100%;
+  height: fit-content;
+  padding: 80px 15px 40px 15px;
+  h4 {
+    color: color(dark-blue-wine);
+    margin-bottom: 20px;
+  }
+  .wine {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+      inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    img {
+      display: inline-block;
+      width: 100%;
+      padding: 40px;
+    }
+    &__info {
+      text-align: center;
+      .cart {
+        color: white;
+        background-color: color(brick-wine);
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+#navigation {
+  z-index: 100;
+
+  .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+  }
+  .navbar-nav {
+    .nav-item .nav-link {
+      color: white;
+    }
+  }
+  #cart {
+    margin-right: 20px;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    a {
+      color: white;
+      font-size: 25px;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      color: white;
+      position: absolute;
+      top: -10%;
+      right: -50%;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #navigation {
+    #cart {
+      margin-top: 15px;
+    }
+  }
+}

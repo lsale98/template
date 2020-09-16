@@ -1,0 +1,1 @@
+$(document).ready(function(){const e=ScrollReveal({reset:!0,mobile:!0});e.reveal("#characteristics h2",{scale:.7}),e.reveal("#characteristics .left",{rotate:{y:80},duration:1e3}),e.reveal("#characteristics .right",{rotate:{y:-80},duration:1e3})});

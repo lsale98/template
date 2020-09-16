@@ -1,0 +1,224 @@
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  &__sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    transition: all 0.4s ease-in-out;
+    &.active {
+      transition: all 0.4s ease-in-out;
+      left: -250px;
+    }
+    h4 {
+      color: white;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .list-group {
+      margin-top: 40px;
+
+      a {
+        color: rgb(202, 201, 201);
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          transition: all 0.4s ease-in-out;
+          li {
+            background-color: rgb(34, 34, 34);
+          }
+        }
+        &.active {
+          border-left: 5px solid color(brick-wine);
+        }
+        li {
+          border-radius: 0;
+          background-color: rgb(61, 61, 61);
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__content {
+    flex: 1;
+    margin-left: 250px;
+    background-color: rgb(245, 245, 245);
+
+    transition: all 0.4s ease-in-out;
+    &.active {
+      margin-left: 0;
+      #wrapper__content__menu {
+        transition: all 0.4s ease-in-out;
+
+        width: 100%;
+        left: 0;
+      }
+    }
+    &__menu {
+      transition: all 0.4s ease-in-out;
+
+      width: calc(100% - 250px);
+      background-color: rgb(255, 255, 255);
+      padding: 25px;
+      display: flex;
+      border-bottom: 1px solid black;
+      position: fixed;
+      top: 0;
+      left: 250px;
+      z-index: 10;
+      #menu {
+        color: white;
+        background-color: color(brick-wine);
+      }
+      #home {
+        display: inline-block;
+        margin-left: 20px;
+        border: 1px solid black;
+      }
+      #cart {
+        margin-right: 20px;
+        width: fit-content;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        a {
+          color: rgb(3, 3, 3);
+          font-size: 25px;
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          background-color: red;
+          color: white;
+          position: absolute;
+          top: -10%;
+          right: -50%;
+          border-radius: 50%;
+          font-size: 14px;
+        }
+      }
+    }
+    &__info {
+      padding: 0px 20px 50px 20px;
+      .winaries {
+        display: flex;
+        width: 80%;
+        height: fit-content;
+        overflow: hidden;
+        margin: auto;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        padding-top: 100px;
+        &__image {
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          flex: 4;
+          img {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+          }
+        }
+        &__info {
+          flex: 8;
+          padding: 10px 20px;
+          h3 {
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          a {
+            background-color: color(brick-wine);
+            color: white;
+            i {
+              animation: arrow 1.5s linear infinite;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-3px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
+}
+
+@media (max-width: 1000px) {
+  #wrapper {
+    flex-direction: row;
+    &__sidenav {
+      width: 100%;
+      height: fit-content;
+      z-index: 5;
+      top: 90px;
+      &.active {
+        left: 0;
+        top: -100%;
+      }
+    }
+    &__content {
+      margin-left: 0;
+      &.active {
+        margin-left: 0;
+      }
+      &__menu {
+        width: 100%;
+        left: 0;
+      }
+      &__info {
+        .winaries {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #wrapper {
+    &__content {
+      &__menu {
+        padding: 25px 10px;
+        #menu {
+          font-size: 12px;
+        }
+        #home {
+          margin-left: 8px;
+          font-size: 14px;
+        }
+        #cart {
+          margin-right: 10px;
+        }
+      }
+
+      &__info {
+        .winaries {
+          display: block;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

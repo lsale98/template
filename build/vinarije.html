@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-vina Srbije | Vinarije</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b74812e088.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="wrapper__sidenav" class="active">
+        <h4>Vinarije Srbije</h4>
+        <ul class="list-group">
+          <a href="#dragic" class="active">
+            <li class="list-group-item">Vina Dragić</li>
+          </a>
+        </ul>
+      </div>
+      <div id="wrapper__content" class="active">
+        <div id="wrapper__content__menu">
+          <button id="menu" class="btn">
+            <i class="fas fa-wine-glass mr-2"></i>Prikaži vinarije
+          </button>
+          <a id="home" href="index.html" class="btn"
+            ><i class="fas fa-home mr-2"></i>Početna</a
+          >
+          <div id="cart">
+            <a href="korpa.html"><i class="fas fa-shopping-cart"></i></a>
+            <span id="items"></span>
+          </div>
+        </div>
+        <div id="wrapper__content__info">
+          <!-- Vina Dragić -->
+          <div class="winaries" id="dragic">
+            <div class="winaries__image">
+              <img src="images/dragic/Dragic.jpg" alt="Vina Dragić" />
+            </div>
+            <div class="winaries__info">
+              <h3>Vina Dragić</h3>
+              <p>
+                Pre više od 50 godina na blagorodnoj peskovitoj zemlji Banata,
+                porodica Dragić je marljivim radom i sa puno ljubavi stvorila
+                još jedan biser u nizu koji se ogleda u bojama neba i zemlje
+                ovog plodnog podneblja. Plod marljivog rada i ljubavi su vina
+                koja Vam od srca predajemo na uživanje.
+              </p>
+              <a href="vina-dragic.html" class="btn"
+                ><i class="fas fa-angle-right mr-2"></i>Pogledajte proizvode</a
+              >
+            </div>
+          </div>
+          <!-- END Vina Dragić -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app-min.js"></script>
+    <script src="js/cart-min.js"></script>
+  </body>
+</html>

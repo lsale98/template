@@ -1,3 +1,12 @@
-@import "modules/1-variables";
-@import "modules/2-utilities";
-@import "modules/0-base";
+@import 'modules/1-variables';
+@import 'modules/2-utilities';
+@import 'modules/0-base';
+@import 'components/0-navbar';
+@import 'components/1-header';
+@import 'components/5-characteristics';
+@import 'components/2-wineries';
+@import 'components/3-wines';
+@import 'components/4-cart';
+@import 'components/6-project';
+@import 'components/7-goals';
+@import 'components/8-activities';

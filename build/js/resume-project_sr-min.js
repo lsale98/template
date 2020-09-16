@@ -1,0 +1,1 @@
+$(document).ready(function(){const e=ScrollReveal({reset:!0,mobile:!0});e.reveal("#project #project__image",{origin:"left",distance:"50px",opacity:.5,duration:1e3}),e.reveal("#project #project__text",{scale:.7,opacity:.5,duration:1e3})});
